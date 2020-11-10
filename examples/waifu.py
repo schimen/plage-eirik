@@ -35,6 +35,5 @@ height = 240
 
 
 # Initial screen (Demonstration for displaying images)
-image = Image.open('waifu.jpg')
-image.thumbnail((width, height), Image.ANTIALIAS)
+image = Image.open('waifu.jpg').resize((width, height))
 disp.display(image)
