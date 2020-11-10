@@ -13,9 +13,9 @@ from PIL import Image, ImageDraw, ImageFont, ImageColor
 import numpy as np
 
 # Raspberry Pi pin configuration:
-RST = 27
-DC  = 25
-LED = 24
+RST = 25
+DC  = 24
+LED = 27
 SPI_PORT = 0
 SPI_DEVICE = 0
 SPI_MODE = 0b11
@@ -131,7 +131,8 @@ sleep(0.5)
 
 # font setting
 font = ImageFont.load_default()
-fontJ = ImageFont.truetype('DejaVuSans.ttf', 28, encoding='unic')
+fontJ = ImageFont.load_default()
+#fontJ = ImageFont.truetype('arial.ttf', 28, encoding='unic')
 
 Weekday = ("Mon","Tue","Wed","Thu","Fri","Sat","Sun")
 
